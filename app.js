@@ -11,6 +11,6 @@ var data = {name:'Akashdeep',
 res.render('home', {data:data}); 
 }); 
   
-var server = app.listen(4000, function() { 
-    console.log('listining to port 4000') 
+var server = app.listen((process.env.PORT || 3000), function() { 
+    console.log('listening to port'); 
 }); 
